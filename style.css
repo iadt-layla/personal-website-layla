@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans";
   scroll-behavior: smooth;
 }
 
@@ -11,37 +10,27 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background: lightgray;
   padding: 25px;
+  background: lightgray;
 }
 
-main {
-  padding-top: 55px;
-  width: 1000px;
-  margin: auto;
+ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
 }
 
-main h2 {
-  margin-top: 10px;
-}
-
+main,
 footer {
-  background: lightgray;
-  padding: 25px;
+  width: 1200px;
+  margin: auto;
   text-align: center;
-  width: 100%;
-  bottom: 0;
-  margin-top: 25px;
 }
 
-.profile-picture {
-  border-radius: 100%;
-
-  transition: all ease-in-out 300ms;
+h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .profile-item {
@@ -49,10 +38,28 @@ footer {
   margin-bottom: 50px;
 }
 
-.initials {
-  color: blueviolet;
+#gallery {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
 }
 
-img {
-  margin-top: 10px;
+#prev,
+#next {
+  height: 15px;
+  width: 15px;
+  background: none;
+  border: none;
+}
+
+#gallery-img {
+  width: 100%;
+}
+
+#prev:hover,
+#next:hover {
+  cursor: pointer;
 }
